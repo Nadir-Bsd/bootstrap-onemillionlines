@@ -12,7 +12,6 @@ body{
     margin: 0px;
     padding: 0px;
     width: 100vw;
-    background: red;
 }
 
 header{
@@ -39,8 +38,10 @@ h2, h3{
 }
 
 hr{
-    color: #d9534f;
+    background-color: #d9534f;
     width: 18%;
+    height: 1px;
+    border: none;
 }
 
 a{
@@ -63,7 +64,7 @@ article{
 }
 
 .container{
-    width: 60%;
+    width: 70%;
 }
 
 .columne {
@@ -138,7 +139,6 @@ article{
             display: flex;
             justify-content: space-between;
             width: 100%;
-            gap: 30px;
             margin-top: 30px;
 
             article{
@@ -151,7 +151,10 @@ article{
                     width: 40%;
                     border: lightgrey 1px solid;
                     border-radius: 2px;
+                    padding: 10px 0px;
                 }
+
+
             }
         }
     }
@@ -176,12 +179,12 @@ footer {
 }
 
 .articleImg{
-    height: 70px;
+    height: 30px;
 }
 
 #back-to-top{
     position: fixed;
-    bottom: 20px;
+    bottom: 350px;
     right: 50px;
 }
 
@@ -193,14 +196,99 @@ footer {
 
 /* Responsive Styling */
 
-@media (max-width: 1199px) {
-
+@media (max-width: 1399px) {
+    #get-involved{
+        div{
+            width: 90%;
+            div{
+                article{    
+                    button{
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+    
+    .container{
+        width: 80%;
+    }
+    
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1000px) {
+    #get-involved{
+        div{
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 150px;
+                article{
+                    width: 80%;
+                    text-align: center;
+                    h3{
+                        margin-bottom: 0px;
+                    }
+
+                    button{
+                        width: 25%;
+                    }
+                }
+            }
+        }
+    }
 
 }
 
 @media (max-width: 767px) {
+    header{
+        nav{
+            div{
+                display: none;
+            }
 
+            #buttonMenu{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                height: 20px;
+                width: 20px;
+                border: 1px grey solid;
+                border-radius: 2px;
+
+                hr{
+                    width: 60%;
+                    height: 1.6px;
+                    background-color: white;
+                    margin: 0px;
+                }
+            }
+        }
+    }
+
+    #home{
+        div{
+            h1{
+                font-size:x-large ;
+            }
+            
+            p{
+                font-size: small;
+            }
+        }
+    }
+
+    #get-involved{
+        div{
+            div{
+                article{
+                    button{
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
 }
